@@ -5,9 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #5f9ea0;
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/*code {*/
+/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+/*    monospace;*/
+/*}*/
+
+.cellWrap {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  height: 100vh;
+  width: 100vw;
+}
+
+.colorCell {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+.gameResults {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.gameResults button {
+  background-color: #fff; /* Green */
+  border: none;
+  color: #404040;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.gameResults button:hover {
+  background-color: #efefef;
 }
